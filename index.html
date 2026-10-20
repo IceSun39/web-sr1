@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js" defer></script>
     <title>Самостійна робота №1</title>
   </head>
   <body>
@@ -12,9 +13,19 @@
       <h2>Виконав студент групи КН-31</h2>
       <h2>Колесник Владислав</h2>
     </header>
+
     <main>
-      <h2>Список факультетів</h2>
-      <article></article>
+      <section class="content">
+        <h2>Список факультетів</h2>
+        <p>Натисніть кнопку, щоб завантажити список факультетів.</p>
+
+        <button id="fetchButton" class="btn" type="button">
+          Завантажити факультети
+        </button>
+
+        <p id="status" role="status" aria-live="polite"></p>
+        <article id="facultyList"></article>
+      </section>
     </main>
   </body>
 </html>
